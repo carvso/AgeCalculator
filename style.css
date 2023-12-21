@@ -125,19 +125,6 @@ input:focus{
     font-style: italic;
     margin-bottom: 0;
 }
-.attribution > a{
-    color: var(--purple);
-    text-decoration: none;
-}
-.attribution{
-    font-weight: 600;
-    font-size: .8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    position: relative;
-    top: 50em; 
-}
 @media (max-width: 768px) {
     .main-content-wrapper {
       width: 25rem;

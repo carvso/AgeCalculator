@@ -11,23 +11,20 @@ html{
     --light-red: hsl(0, 100%, 67%);
 }
 body{
-    background-image: url(assets/images/bg.png);
-    background-size: cover;
-    background-color: var(--light-grey);
+    background-image: linear-gradient(to left top, #854dff, #e81dc7, #ff258d, #ff5d5e, #ff8c42);
 }
 .main-content-wrapper{
     width: 35rem;
     height: 25rem;
     background-color: var(--white);
-    /* margin-left: auto;
-    margin-right: auto; */
     padding: 3.5em 3.5em;
     border-radius: 25px 25px 125px 25px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+    -webkit-box-shadow: -8px 8px 21px 5px rgba(133,77,255,0.32); 
+    box-shadow: -8px 8px 21px 5px rgba(133,77,255,0.32);
 }
 label{
     color: var(--smokey-gray);
@@ -57,7 +54,6 @@ input{
     border-color: var(--light-red);
 }
 input:focus{
-    /* outline-color: hsl(259, 100%, 65%); */
     outline: none !important;
     border-color: var(--purple);
 }

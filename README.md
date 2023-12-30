@@ -50,8 +50,19 @@ Users should be able to:
 
 ### What I learned
 
-To realize this project i just jumped in to recreat the design images provided by FrontEndMentor writing down HTML and CSSNothingreally  important to highlight i9n this part. talking about javascript is the main core of this project, that involves.
-To hhandl the erroers and check on input fields, we used two functions
+To realize this project i just jumped in to recreat the design images provided by FrontEndMentor writing down HTML and CSS. During the building of the css page i found out how to center a div relatively to his body width, even if you have to set a positioning to absoulte or whatever. this is the code:
+```css
+.main-content-wrapper{
+    /*How to center a div down here*/
+    inset: 0em;
+    margin: auto;
+    position: relative;
+    top: 4.5em;
+}
+```
+Talking about javascript wich is the main core of this project, that involves working with date OBJECTS, that at first can be really painful.
+I've also did a check for all the inserted input in the input fields, and I did it creating two functions,
+one to set the errors message and inject it into the html page and the other to convalidate the inputs you can see it down here.
 ```js
 const setError = (element, message) => {
     const inputContainer = element.parentElement;
@@ -106,8 +117,6 @@ It also helped me in working with dates:
 
     checkNaN(days, months, years);
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 ## Author
 

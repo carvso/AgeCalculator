@@ -2,6 +2,7 @@
 
 html{
     font-family: 'Poppins', sans-serif;
+    height: 100vh;
 }
 :root{
     --smokey-gray: hsl(0, 1%, 44%);
@@ -12,6 +13,9 @@ html{
 }
 body{
     background-image: linear-gradient(to left top, #854dff, #e81dc7, #ff258d, #ff5d5e, #ff8c42);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .main-content-wrapper{
     width: 35rem;
@@ -19,10 +23,11 @@ body{
     background-color: var(--white);
     padding: 3.5em 3.5em;
     border-radius: 25px 25px 125px 25px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /*How to center a div down here*/
+    inset: 0em;
+    margin: auto;
+    position: relative;
+    top: 4.5em;
     -webkit-box-shadow: -8px 8px 21px 5px rgba(133,77,255,0.32); 
     box-shadow: -8px 8px 21px 5px rgba(133,77,255,0.32);
 }
@@ -46,6 +51,9 @@ input{
     font-size: 1.3rem;
     font-weight: 600;
     text-align: center;
+}
+.input-container{
+    position: relative;
 }
 .input-container.success input {
     border-color: var(--purple);
@@ -122,28 +130,25 @@ input:focus{
     margin-bottom: 0;
 }
 @media (max-width: 768px) {
-    .main-content-wrapper {
-      width: 25rem;
+    .main-content-wrapper{
+        width: 15em;
     }
-}
-  
-  @media (max-width: 375px) {
-    .main-content-wrapper {
-        font-size: 2em;
+    .inputs-txt-container{
+        position: relative;
+        left: -2.5em;
     }
-  
-    .inputs-txt-container {
-      gap: 0.5em;
+    .input-container > input{
+        width: 5em;
+        font-size: 1em;
     }
-  
-    input {
-      width: 100%;
-      margin-right: 0;
+    .line-submit-wrapper .line{
+        width: 17em;
+        right: 2em;
     }
-  
-    .sub-btn {
-      left: auto;
-      right: 0;
-      top: 2em;
+    .line-submit-wrapper .sub-btn{
+        left: 16em;
+    }
+    .default-wrapper > h1{
+        font-size: 2.6em;
     }
 }

@@ -113,6 +113,7 @@ input:focus{
     position: relative;
     left: 33em;
     top: 0;
+    outline: none;
 }
 .arrow-svg{
     position: relative;

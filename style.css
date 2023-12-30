@@ -3,6 +3,7 @@
 html{
     font-family: 'Poppins', sans-serif;
     height: 100vh;
+    overflow-y: hidden;
 }
 :root{
     --smokey-gray: hsl(0, 1%, 44%);
@@ -137,6 +138,9 @@ input:focus{
     .inputs-txt-container{
         position: relative;
         left: -2.5em;
+    }
+    .input-container .required-p{
+        font-size: .5em;
     }
     .input-container > input{
         width: 5em;
